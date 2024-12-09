@@ -46,3 +46,87 @@ Design a user registration form with the following requirements:
 A user-friendly registration form that prevents submission if required fields are not filled correctly.  
 
 ---
+
+
+
+my answers 
+
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Multimedia Webpage with Registration Form</title>
+</head>
+<body>
+
+    <!-- Header Section -->
+    <header>
+        <h1>Welcome to My Multimedia Webpage</h1>
+    </header>
+
+    <!-- Audio Section -->
+    <section>
+        <h2>Audio Player</h2>
+        <p>Click the play button to listen to the audio track.</p>
+        <audio controls>
+            <source src="https://www.soundhelix.com/examples/mp3/SoundHelix-Song-1.mp3" type="audio/mpeg">
+            <source src="https://www.soundhelix.com/examples/mp3/SoundHelix-Song-1.ogg" type="audio/ogg">
+            Your browser does not support the audio element.
+        </audio>
+    </section>
+
+    <!-- Video Section -->
+    <section>
+        <h2>Video Player</h2>
+        <p>Click the play button to watch the video.</p>
+        <video controls poster="https://www.w3schools.com/html/movie.jpg">
+            <source src="https://www.w3schools.com/html/mov_bbb.mp4" type="video/mp4">
+            <source src="https://www.w3schools.com/html/mov_bbb.webm" type="video/webm">
+            Your browser does not support the video element.
+        </video>
+    </section>
+
+    <!-- Registration Form Section -->
+    <section>
+        <h2>Registration Form</h2>
+        <form action="#" method="POST">
+            <!-- Full Name -->
+            <label for="fullname">Full Name:</label>
+            <input type="text" id="fullname" name="fullname" required maxlength="50" placeholder="Enter your full name"><br><br>
+
+            <!-- Email Address -->
+            <label for="email">Email Address:</label>
+            <input type="email" id="email" name="email" required placeholder="Enter your email"><br><br>
+
+            <!-- Password -->
+            <label for="password">Password:</label>
+            <input type="password" id="password" name="password" required minlength="8" placeholder="Enter your password"><br><br>
+
+            <!-- Age -->
+            <label for="age">Age (18+):</label>
+            <input type="number" id="age" name="age" required min="18" placeholder="Enter your age"><br><br>
+
+            <!-- Gender -->
+            <label>Gender:</label><br>
+            <input type="radio" id="male" name="gender" value="male" required>
+            <label for="male">Male</label><br>
+            <input type="radio" id="female" name="gender" value="female">
+            <label for="female">Female</label><br>
+            <input type="radio" id="other" name="gender" value="other">
+            <label for="other">Other</label><br><br>
+
+            <!-- Terms and Conditions -->
+            <label for="terms">
+                <input type="checkbox" id="terms" name="terms" required> I agree to the terms and conditions.
+            </label><br><br>
+
+            <!-- Submit Button -->
+            <input type="submit" value="Register">
+        </form>
+    </section>
+
+</body>
+</html>
